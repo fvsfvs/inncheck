@@ -41,4 +41,4 @@ http://localhost:8080/api/organizations/inn/{inn}
 Организации из базы синхронизируются с Dadata по ОГРН - предполагается, что он уникален для каждой организации.
 
 ### Запуск тестов
-```Запуск тестов docker compose exec php php bin/phpunit```
+```docker compose exec php php bin/phpunit```
