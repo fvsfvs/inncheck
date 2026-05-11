@@ -42,7 +42,8 @@ http://localhost:8080/api/organizations/inn/{inn}
 
 ### Описание ответа
 
-message - сообщение при ошибке
+message - сообщение при ошибке, 
+
 data - массив организаций
 
 #### Содержание data
