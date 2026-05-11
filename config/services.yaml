@@ -1,0 +1,14 @@
+parameters:
+    organization.ttl_days: 30
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        bind:
+            string $daDataHost: '%env(DADATA_HOST)%'
+            string $daDataToken: '%env(DADATA_API_TOKEN)%'
+    App\:
+        resource: '../src/'
+    App\Service\OrganizationService:
+        arguments:
+            $organizationTtlDays: '%organization.ttl_days%'
